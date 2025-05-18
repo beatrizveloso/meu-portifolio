@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="icon" href="src/images/logo.png" type="image">
+</head>
+<body>
+  <header class="header">
+    <nav class="menu">
+      <ul>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <div class="logo"><img src="src/images/logo.png" alt="Logo"></div>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home">
+    <img src="src/images/home.png" alt="Imagem principal" class="imagem-home">
+  </main>
+
+  
+  <div class="sobre-mim" id="sobre">
+    <img src="src/images/sobre-mim.png" alt="Imagem Sobre mim" class="imagem-sobre">
+  </div>
+
+  <section id="projetos" class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="src/images/slide1.png" alt="Projeto 1">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="src/images/slide2.png" alt="Projeto 2">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="src/images/slide3.png" alt="Projeto 3">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="src/images/slide4.png" alt="Projeto 4">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="dots-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </section>
+  <div class="studies" id="skills">
+    <img src="src/images/tecs.png" alt="Imagem Skills" class="imagem-studies">
+  </div>
+  <div class="studies">
+    <img src="src/images/studies.png" alt="Imagem Skills" class="imagem-studies">
+  </div>
+  <div class="contato" id="contato">
+    <img src="src/images/contato.png" alt="Imagem Contatos" class="imagem-contato">
+  </div>
+  <script src="src/js/script.js"></script>
+</body>
+</html>

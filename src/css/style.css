@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1e6d7;
+  font-family: 'Pinyon Script', cursive;
+  color: #373737;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #f1e6d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  height: 35px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+  margin-top: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #373737;
+  font-size: 1.9em;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #77388a;
+}
+
+.home,
+.sobre-mim,
+.studies,
+.contato{
+  width: 100%;
+  height: 100vh;
+  margin-top: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imagem-home,
+.imagem-sobre, 
+.imagem-studies,
+.imagem-contato {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slideshow-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #f1e6d7;
+}
+
+.slideshow-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.3s;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(182, 122, 197, 0.5);
+  z-index: 100;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(103, 37, 112, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
+
+.dots-container {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f1e6d7;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
